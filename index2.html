@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1>AutoComplete Rx js</h1>
+  <button id='start'>Start</button>
+  <button id='stop'>Stop</button>
+  <button id='quarter'>Quarter</button>
+  <button id='half'>half</button>
+  <input type="text" id='input'>
+  <form>
+    <ul  id='results'>
+
+    </ul>
+  </form>
+
+
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+<script>
+const config = {
+  apiKey: "AIzaSyBp_x6rh7z7eph_4Z0tbS_QUbvo4KvCrdU",
+  authDomain: "naturetrak-prototype.firebaseapp.com",
+  databaseURL: "https://naturetrak-prototype.firebaseio.com",
+  projectId: "naturetrak-prototype",
+  storageBucket: "naturetrak-prototype.appspot.com",
+  messagingSenderId: "346619304190"
+};
+
+firebase.initializeApp(config);
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/5.5.2/Rx.min.js"></script>
+<script src="index5.js"></script>
+</body>
+</html>
